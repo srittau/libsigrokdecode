@@ -48,6 +48,15 @@ command = {
         31: ['Program down', 'P-'],
         68: ['AV', 'AV'],
     }.items())),
+
+    # This is most likely a generic remote control. The PCB
+    # has space for 16 buttons total, of which not all are
+    # connected. The PCB is marked "JSY", "XSK-5462", and
+    # "2014-6-12 JW". It consists of only a single IC, marked
+    # "BJEC107BNE" or similar. The following buttons are
+    # marked for the remote control of a LED panel this was
+    # found in.
+
     0xEA41: {
         0x10: ['Warmer', 'T+'],
         0x11: ['Colder', 'T-'],
