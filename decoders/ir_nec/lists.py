@@ -20,6 +20,7 @@
 # Addresses/devices. Items that are not listed are reserved/unknown.
 address = {
     0x40: 'Matsui TV',
+    0xEA41: 'Unknown LED Panel',
 }
 
 digits = {
@@ -47,4 +48,14 @@ command = {
         31: ['Program down', 'P-'],
         68: ['AV', 'AV'],
     }.items())),
+    0xEA41: {
+        0x10: ['Warmer', 'T+'],
+        0x11: ['Colder', 'T-'],
+        0x12: ['Brighter', '+'],
+        0x13: ['Darker', '-'],
+        0x14: ['Off', 'O'],
+        0x15: ['On', 'I'],
+        0x41: ['Min Brightness', 'Min'],
+        0x48: ['Max Brightness', 'Max'],
+    },
 }
